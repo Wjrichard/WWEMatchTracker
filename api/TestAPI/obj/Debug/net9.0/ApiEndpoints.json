@@ -1,0 +1,102 @@
+[
+  {
+    "ContainingType": "TestAPI.Features.Match.MatchModule\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMatchRoutes\u003Eb__0_1",
+    "RelativePath": "Match/AddMatch",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "match",
+        "Type": "TestAPI.Models.Match",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Match"
+    ],
+    "EndpointName": "AddMatch"
+  },
+  {
+    "ContainingType": "TestAPI.Features.Match.MatchModule\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMatchRoutes\u003Eb__0_0",
+    "RelativePath": "Match/GetMatches",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TestAPI.Models.Match, TestAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Match"
+    ],
+    "EndpointName": "GetMatches"
+  },
+  {
+    "ContainingType": "TestAPI.Features.Users.UserModule\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUserRoutes\u003Eb__0_1",
+    "RelativePath": "Users/AddUser",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "TestAPI.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Users"
+    ],
+    "EndpointName": "AddUser"
+  },
+  {
+    "ContainingType": "TestAPI.Features.Users.UserModule\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUserRoutes\u003Eb__0_0",
+    "RelativePath": "Users/GetUsers",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TestAPI.Models.User, TestAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Users"
+    ],
+    "EndpointName": "GetUsers"
+  }
+]
