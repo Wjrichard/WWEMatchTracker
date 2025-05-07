@@ -18,8 +18,8 @@ public static class PredictionModule
             .WithName(nameof(GetAllPredictions))
             .Produces<List<Prediction>>();
 
-        group.MapGet("/GetMatchPredictions",
-                async (IMediator mediator) => await mediator.Send(new GetMatchPredictions.Query()))
+        group.MapGet("/GetMatchPredictions/{matchId}",
+                async (IMediator mediator,int matchId) => await mediator.Send(new GetMatchPredictions.Query(matchId)))
             .WithName(nameof(GetMatchPredictions))
             .Produces<List<Prediction>>();
 

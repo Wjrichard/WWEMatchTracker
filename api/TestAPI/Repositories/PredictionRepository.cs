@@ -58,7 +58,7 @@ namespace TestAPI.Repositories
             }
         }
 
-        public async Task<List<Prediction>> GetMatchPredictions()
+        public async Task<List<Prediction>> GetMatchPredictions(int matchId)
         {
             string connectionString = "Data Source=Event-Tracker.sqlite;";
             List<Prediction> predictions = new List<Prediction>();
@@ -88,7 +88,7 @@ namespace TestAPI.Repositories
                             insertCommand.ExecuteNonQuery();
                         }
                     }
-                    string query = "SELECT * FROM Prediction";
+                    string query = $"SELECT * FROM Prediction WHERE MatchId = {matchId}";
                     using (SQLiteCommand command = new SQLiteCommand(query, connection))
                     {
                         using (SQLiteDataReader reader = command.ExecuteReader())

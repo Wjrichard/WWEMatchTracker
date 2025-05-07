@@ -50,6 +50,84 @@
     "EndpointName": "GetMatches"
   },
   {
+    "ContainingType": "TestAPI.Modules.PredictionModule\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPredictionRoutes\u003Eb__0_2",
+    "RelativePath": "Prediction/AddPrediction",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "prediction",
+        "Type": "TestAPI.Models.Prediction",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Prediction"
+    ],
+    "EndpointName": "AddPrediction"
+  },
+  {
+    "ContainingType": "TestAPI.Modules.PredictionModule\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPredictionRoutes\u003Eb__0_0",
+    "RelativePath": "Prediction/GetAllPredictions",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TestAPI.Models.Prediction, TestAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Prediction"
+    ],
+    "EndpointName": "GetAllPredictions"
+  },
+  {
+    "ContainingType": "TestAPI.Modules.PredictionModule\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPredictionRoutes\u003Eb__0_1",
+    "RelativePath": "Prediction/GetMatchPredictions/{matchId}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "matchId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TestAPI.Models.Prediction, TestAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Prediction"
+    ],
+    "EndpointName": "GetMatchPredictions"
+  },
+  {
     "ContainingType": "TestAPI.Features.Users.UserModule\u002B\u003C\u003Ec",
     "Method": "\u003CMapUserRoutes\u003Eb__0_1",
     "RelativePath": "Users/AddUser",
