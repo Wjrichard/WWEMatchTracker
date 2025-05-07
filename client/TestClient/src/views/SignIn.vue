@@ -1,8 +1,13 @@
 ﻿<script lang="ts">
     import userStore from '@/stores/user.ts'
-    import {ref} from 'vue'
+    import api from '@/services/api.ts'
+    import {onBeforeMount, ref} from 'vue'
     await userStore.loadUsers()
     const strEmail = ref('')
+    
+    onBeforeMount(() =>
+      api.getAllUsers().then((res) => {console.log(res)}
+    ));
 </script>
 
 <template>

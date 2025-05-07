@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\features\\users\\usermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\users\\usermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -51,19 +55,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserModule.cs",
+              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Users\\UserModule.cs",
+              "RelativeDocumentMoniker": "Features\\Users\\UserModule.cs",
+              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Users\\UserModule.cs",
+              "RelativeToolTip": "Features\\Users\\UserModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T02:06:12.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwB8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-07T01:23:50.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -71,12 +88,11 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-07T01:22:06.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T01:22:06.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GetMatchPredictions.cs",
               "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Predictions\\Queries\\GetMatchPredictions.cs",
               "RelativeDocumentMoniker": "Features\\Predictions\\Queries\\GetMatchPredictions.cs",
@@ -84,12 +100,11 @@
               "RelativeToolTip": "Features\\Predictions\\Queries\\GetMatchPredictions.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T01:10:34.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T01:10:34.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PredictionRepository.cs",
               "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Repositories\\PredictionRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\PredictionRepository.cs",
@@ -97,12 +112,11 @@
               "RelativeToolTip": "Repositories\\PredictionRepository.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAowE4AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T01:07:29.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T01:07:29.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GetAllPredictions.cs",
               "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Predictions\\Queries\\GetAllPredictions.cs",
               "RelativeDocumentMoniker": "Features\\Predictions\\Queries\\GetAllPredictions.cs",
@@ -110,12 +124,11 @@
               "RelativeToolTip": "Features\\Predictions\\Queries\\GetAllPredictions.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T01:07:23.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T01:07:23.794Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AddPrediction.cs",
               "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Predictions\\Commands\\AddPrediction.cs",
               "RelativeDocumentMoniker": "Features\\Predictions\\Commands\\AddPrediction.cs",
@@ -123,12 +136,11 @@
               "RelativeToolTip": "Features\\Predictions\\Commands\\AddPrediction.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T01:07:18.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T01:07:18.198Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PredictionModule.cs",
               "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Predictions\\PredictionModule.cs",
               "RelativeDocumentMoniker": "Features\\Predictions\\PredictionModule.cs",
@@ -136,12 +148,11 @@
               "RelativeToolTip": "Features\\Predictions\\PredictionModule.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T01:07:11.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T01:07:11.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -149,8 +160,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwCgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T01:04:40.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T01:04:40.671Z"
             }
           ]
         }

@@ -1,15 +1,18 @@
 ﻿import axios from 'axios';
 
 const apiClient = axios.create({
-    baseURL: 'http://localhost:5000',
+    baseURL: 'https://localhost:44328/',
     headers: {
         'Content-Type': 'application/json'
     }
 });
 
-export default {
-    getExampleData() {
-        return apiClient.get('/example-endpoint');
-    },
-    // Add more methods as needed
-};
+function getAllUsers() {
+    const users = apiClient.get('/GetUsers');
+    console.log(users);
+    return users;
+}
+
+const api = {getAllUsers};
+export default api
+

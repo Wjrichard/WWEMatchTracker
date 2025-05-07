@@ -16,7 +16,7 @@ export async function createUser(email:string,username?:string){
 
 export async function loadUsers(){
     try {
-        const response = await axios.get('http://localhost:5000/api/users');
+        const response = await axios.get('http://localhost:44328/GetUsers');
         _Users.value = response.data;
     } catch (error) {
         console.error('Error fetching users:', error);
