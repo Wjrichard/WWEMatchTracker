@@ -7,24 +7,29 @@ export const initializedUser = {
     email: '',
     username: ''
 }
-export const _Users = ref<User[]>([])
-export const selectedUser = ref<User>(initializedUser)
+
+export const _Users = ref<User[]>([]);
+export const selectedUser = ref<User>(initializedUser);
+
 
 export async function createUser(email:string,username?:string){
 
 }
 
-export async function loadUsers(){
+export async function loadUsers() {
     try {
-        const response = await axios.get('http://localhost:44328/GetUsers');
+        const response = await axios.get('https://localhost:44328/Users/GetUsers');
         _Users.value = response.data;
+        console.log(_Users.value);
     } catch (error) {
         console.error('Error fetching users:', error);
     }
-
 }
 
+
 export async function setUser(email:string,username?:string) {
+    console.log(_Users)
+    console.log(email)
     const curUser = _Users.value.find(user => user.email === email)
     if (curUser){
         selectedUser.value = curUser
@@ -36,5 +41,5 @@ export async function setUser(email:string,username?:string) {
     return false
 }
 
-const userStore = {_Users,selectedUser,loadUsers,initializedUser,setUser}
-export default userStore
+const userStore = { _Users, selectedUser, loadUsers, initializedUser, setUser };
+export default userStore;

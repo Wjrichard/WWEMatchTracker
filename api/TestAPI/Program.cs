@@ -13,6 +13,15 @@ builder.Services.AddOpenApi();
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+    builder => builder.WithOrigins("http://localhost:5173")
+    .AllowAnyHeader()
+    .AllowAnyMethod());
+});
+
+
 builder.Services.AddControllers(); // This line registers the controllers
 builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped(_ => new UserRepository());
@@ -59,6 +68,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseRouting();
+
+
+app.UseCors("AllowSpecificOrigin");
 
 app.UseEndpoints(endpoints =>
 {
