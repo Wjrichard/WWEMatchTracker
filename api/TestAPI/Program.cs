@@ -16,7 +16,7 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.Get
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin",
-    builder => builder.WithOrigins("http://localhost:5173")
+    builder => builder.WithOrigins("http://localhost:5173", "http://localhost:5174")
     .AllowAnyHeader()
     .AllowAnyMethod());
 });
@@ -29,6 +29,8 @@ builder.Services.AddScoped<MatchRepository>();
 builder.Services.AddScoped(_ => new MatchRepository());
 builder.Services.AddScoped<PredictionRepository>();
 builder.Services.AddScoped(_=> new PredictionRepository());
+builder.Services.AddScoped<EventRepository>();
+builder.Services.AddScoped(_ => new EventRepository());
 
 
 builder.Services.AddSwaggerGen(c =>
@@ -78,6 +80,7 @@ app.UseEndpoints(endpoints =>
     endpoints.MapUserRoutes();
     endpoints.MapMatchRoutes();
     endpoints.MapPredictionRoutes();
+    endpoints.MapEventRoutes();
 });
 
 app.Run();

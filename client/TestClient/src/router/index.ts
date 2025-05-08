@@ -6,7 +6,22 @@ const router = createRouter({
 		{
 			path: '/',
 			name: 'home',
-			component: () => import('@/views/HomeView.vue'),
+			component: () => import('../components/SignIn.vue'),
+		},
+		{
+			path: '/events',
+			name: 'events',
+			component: () => import('@/views/EventListView.vue'),
+		},
+		{
+			path: '/matches/{eventId}',
+			name: 'matches',
+			component: () => import('@/views/MatchListView.vue'),
+		},
+		{
+			path: '/match/prediction',
+			name: 'prediction',
+			component: () => import('@/views/PredictionView.vue'),
 		},
 	],
 })

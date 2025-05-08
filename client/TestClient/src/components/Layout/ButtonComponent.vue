@@ -1,6 +1,6 @@
 ﻿<script setup lang="ts">
 import { computed, type FunctionalComponent, useAttrs } from 'vue'
-import Dots3xBounce from '@/components/Dots3xBounce.vue'
+import Dots3xBounce from '@/components/Layout/Dots3xBounce.vue'
 
 const props = defineProps<{
     /**

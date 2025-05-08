@@ -1,43 +1,27 @@
 <script setup lang="ts">
-import TheWelcome from './components/TheWelcome.vue'
-import SignIn from "@/views/SignIn.vue";
+import {RouterLink,RouterView} from "vue-router";
+import SideBar from "@/components/SideBar.vue";
 </script>
 
 <template>
-    <main class="bg-white flex justify-start">
-        <SignIn />
-    </main>
-
-    <main>
-        <TheWelcome />
-    </main>
+    <div id="app" class="h-full flex w-full">
+        <aside class="w-64">
+            <SideBar />
+        </aside>
+        <main>
+            <router-view />
+        </main>
+    </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+<style>
+    #app {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
 </style>
+

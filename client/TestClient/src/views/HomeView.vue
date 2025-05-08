@@ -1,9 +1,11 @@
 <script setup lang="ts">
-    import SignIn from "@/views/SignIn.vue";
+import TheWelcome from '../components/TheWelcome.vue'
+import SignIn from "../components/SignIn.vue";
+
 </script>
 
 <template>
-    <div class="border">
+    <main class="flex items-center">
         <SignIn />
-    </div>
+    </main>
 </template>

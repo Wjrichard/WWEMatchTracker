@@ -1,5 +1,7 @@
 ﻿export interface Event
 {
-    intEventId:number
-    strEventName:string
+    eventId:number
+    eventName:string
+    eventImage:string
+    eventDate:string
 }

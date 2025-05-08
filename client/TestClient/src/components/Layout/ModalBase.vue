@@ -2,7 +2,7 @@
 import { ref, watch, computed } from 'vue'
 import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
 import type { ModalResponseType } from '@/code/Modal'
-import Button from '@/components/ButtonComponent.vue'
+import Button from '@/components/Layout/ButtonComponent.vue'
 
 const props = defineProps<{
     open: boolean

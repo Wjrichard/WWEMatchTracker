@@ -5,6 +5,7 @@ namespace TestAPI.Models;
 public class Match
 {
     public int MatchId { get; set; }
+    public int EventId { get; set; }
     public string ShortName { get; set; }
     public string? EventImage { get; set; }
     public string Team1 { get; set; }
