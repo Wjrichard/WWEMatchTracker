@@ -34,6 +34,7 @@ import { tw } from "@/components/utilities/tw.ts";
 
 export interface RekaComboBoxProps<T> {
     options?: T;
+    placeholder?: string;
     groupContext?: { key: string; displayKey: string; valueKey: string };
     optionContext?: { key: string; displayKey: string; valueKey: string };
 }
@@ -87,7 +88,7 @@ const ComboboxItemIndicatorStyles = tw`inline-flex items-center justify-center`;
           }
         "
                 :class="twMerge(tw`h-full w-full px-2 outline-none`)"
-                placeholder="Placeholder..."
+                :placeholder="placeholder"
             />
             <ComboboxTrigger
                 :class="

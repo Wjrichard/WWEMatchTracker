@@ -9,7 +9,7 @@ const openModal = ref(false)
 </script>
 
 <template>
-    <Menu as="div" class="relative inline-block px-3 pt-2 text-left">
+    <Menu as="div" class="relative w-full inline-block px-3 pt-2 text-left">
         <div>
             <MenuButton
                 class="group w-full rounded-md bg-gray-200 px-3.5 py-2 text-left text-sm font-medium text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-100"
@@ -17,13 +17,15 @@ const openModal = ref(false)
         <span
             class="flex w-full items-center justify-between pl-1 space-x-3"
         >
-          <span class="flex min-w-0 flex-1 flex-col">
-            <span class="truncate text-sm font-medium text-gray-900">
-                {{ userStore.selectedUser.value.username }} - {{ userStore.selectedUser.value.email }}
-            </span>
-            <span class="truncate text-xs text-gray-500">
-                {{userStore.selectedUser}}
-            </span>
+          <span class="flex min-w-0 text-xl flex-1 w-full">
+            <ul class="divide-y divide-gray-200 w-full">
+                <li class="truncate font-medium text-gray-900">
+                    {{ userStore.selectedUser.value.username }} Testing username
+                </li>
+                <li class="truncate text-gray-500">
+                    {{ userStore.selectedUser.value.email }} Testing email
+                </li>
+              </ul>
           </span>
         </span>
             </MenuButton>

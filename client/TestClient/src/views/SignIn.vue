@@ -3,12 +3,16 @@ import { ref, onMounted } from 'vue';
 import userStore, {_Users} from '@/stores/user.ts';
 import ModalBase from "@/components/Layout/ModalBase.vue";
 import Button from "@/components/Layout/ButtonComponent.vue"
+import router from '@/router';
 import {UserCircleIcon} from "@heroicons/vue/24/solid";
+import {useRouter} from "vue-router";
 
 const showCreateUserModal = ref(false)
 const strEmail = ref('');
 const strNewEmail = ref('')
 const strNewUsername = ref('')
+
+const $router = useRouter()
 
 const validEmail = (email:string) => {
     return String(email)
@@ -21,6 +25,7 @@ const validEmail = (email:string) => {
 function setUser() {
     if (_Users.value.find(user => user.email === strEmail.value)){
         userStore.setUser(strEmail.value)
+        $router.push({ name: 'events' });
     } else {
         strNewEmail.value = strEmail.value
         showCreateUserModal.value = true
@@ -32,6 +37,7 @@ async function applyNewUser(){
     await userStore.setUser(strNewEmail.value,strNewUsername.value)
     await userStore.loadUsers()
     showCreateUserModal.value = false
+    $router.push({ name: 'events' });
 }
 
 </script>
@@ -51,13 +57,14 @@ async function applyNewUser(){
                 </div>
 
                 <div class="pt-3">
-                    <button @click="setUser()"
-                            class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 
-                                    font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 
-                                    focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                        Sign in
-                    </button>
+                    
+                      <button @click="setUser()"
+                              class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 
+                                      font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 
+                                      focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      >
+                            Sign in
+                      </button>
                 </div>
                 <div>
                     Current User: {{userStore.selectedUser}}
