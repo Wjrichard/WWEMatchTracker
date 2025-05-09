@@ -1,11 +1,11 @@
 ﻿import type { Event } from '@/types/event.ts'
 import {ref} from 'vue'
 import axios from "axios";
+import { FileUtilities } from '@/utilities/file'
 
-export const initializedEvent = {
+export const initializedEvent = <Event>{
     eventId: 0,
     eventName:'',
-    eventImage:'',
     eventDate:'',
 }
 
@@ -24,7 +24,15 @@ export async function createEvent(event:Event){
 export async function loadEvents() {
     try {
         const response = await axios.get('https://localhost:44328/Events/GetEvents');
-        _Events.value = response.data;
+        _Events.value = response.data/*.map(event => {
+                return <Event>{
+                    eventId: event.eventId,
+                    eventName: event.eventName,
+                    eventImage: event.eventImage,
+                    eventDate: event.eventDate
+                };
+            });*/
+        console.log(_Events.value)
     } catch (error) {
         console.error('Error fetching users:', error);
     }

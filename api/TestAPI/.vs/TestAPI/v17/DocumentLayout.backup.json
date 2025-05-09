@@ -1,57 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\features\\events\\queries\\getevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\events\\queries\\getevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\features\\events\\eventmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\events\\eventmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\repositories\\matchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\repositories\\matchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:repositories\\matchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\repositories\\predictionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\features\\events\\eventmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\events\\eventmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\features\\events\\queries\\getevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\events\\queries\\getevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\repositories\\predictionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:repositories\\predictionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\features\\predictions\\queries\\getmatchpredictions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\features\\predictions\\queries\\getmatchpredictions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\predictions\\queries\\getmatchpredictions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\features\\predictions\\predictionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\features\\predictions\\predictionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\predictions\\predictionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\features\\users\\usermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\features\\users\\usermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\users\\usermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\features\\predictions\\queries\\getallpredictions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\features\\predictions\\queries\\getallpredictions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\predictions\\queries\\getallpredictions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wyatt\\source\\repos\\wwematchtracker\\api\\testapi\\features\\predictions\\commands\\addprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\features\\predictions\\commands\\addprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\predictions\\commands\\addprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -71,71 +71,75 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "Models\\Event.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Models\\Event.cs",
+              "RelativeToolTip": "Models\\Event.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T19:07:36.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "EventRepository.cs",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Repositories\\EventRepository.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Repositories\\EventRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\EventRepository.cs",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Repositories\\EventRepository.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Repositories\\EventRepository.cs",
               "RelativeToolTip": "Repositories\\EventRepository.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAQwC8AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T18:29:52.789Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "GetEvents.cs",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Events\\Queries\\GetEvents.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Events\\Queries\\GetEvents.cs",
               "RelativeDocumentMoniker": "Features\\Events\\Queries\\GetEvents.cs",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Events\\Queries\\GetEvents.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Events\\Queries\\GetEvents.cs",
               "RelativeToolTip": "Features\\Events\\Queries\\GetEvents.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T18:19:44.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EventModule.cs",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Events\\EventModule.cs",
-              "RelativeDocumentMoniker": "Features\\Events\\EventModule.cs",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Events\\EventModule.cs",
-              "RelativeToolTip": "Features\\Events\\EventModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T18:19:43.415Z"
+              "WhenOpened": "2025-05-08T18:19:44.044Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MatchRepository.cs",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Repositories\\MatchRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\MatchRepository.cs",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Repositories\\MatchRepository.cs",
-              "RelativeToolTip": "Repositories\\MatchRepository.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAmwGQAAAAAAAAAAAAAAA==",
+              "Title": "EventModule.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Events\\EventModule.cs",
+              "RelativeDocumentMoniker": "Features\\Events\\EventModule.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Events\\EventModule.cs",
+              "RelativeToolTip": "Features\\Events\\EventModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T17:15:15.413Z"
+              "WhenOpened": "2025-05-08T18:19:43.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MatchRepository.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Repositories\\MatchRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\MatchRepository.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Repositories\\MatchRepository.cs",
+              "RelativeToolTip": "Repositories\\MatchRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwCUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T17:15:15.413Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Match.cs",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Models\\Match.cs",
-              "RelativeDocumentMoniker": "Models\\Match.cs",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Models\\Match.cs",
-              "RelativeToolTip": "Models\\Match.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:41:43.363Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "GetMatchPredictions.cs",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Predictions\\Queries\\GetMatchPredictions.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Predictions\\Queries\\GetMatchPredictions.cs",
               "RelativeDocumentMoniker": "Features\\Predictions\\Queries\\GetMatchPredictions.cs",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Predictions\\Queries\\GetMatchPredictions.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Predictions\\Queries\\GetMatchPredictions.cs",
               "RelativeToolTip": "Features\\Predictions\\Queries\\GetMatchPredictions.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -143,11 +147,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PredictionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Repositories\\PredictionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Repositories\\PredictionRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\PredictionRepository.cs",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Repositories\\PredictionRepository.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Repositories\\PredictionRepository.cs",
               "RelativeToolTip": "Repositories\\PredictionRepository.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAmwDwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -155,23 +159,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFEAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T01:04:40.671Z"
+              "WhenOpened": "2025-05-07T01:04:40.671Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAEAAAAAAAAAAAAwwBcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -181,9 +186,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "GetAllPredictions.cs",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Predictions\\Queries\\GetAllPredictions.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Predictions\\Queries\\GetAllPredictions.cs",
               "RelativeDocumentMoniker": "Features\\Predictions\\Queries\\GetAllPredictions.cs",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Predictions\\Queries\\GetAllPredictions.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Predictions\\Queries\\GetAllPredictions.cs",
               "RelativeToolTip": "Features\\Predictions\\Queries\\GetAllPredictions.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAzwBQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -193,9 +198,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "AddPrediction.cs",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Predictions\\Commands\\AddPrediction.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Predictions\\Commands\\AddPrediction.cs",
               "RelativeDocumentMoniker": "Features\\Predictions\\Commands\\AddPrediction.cs",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Predictions\\Commands\\AddPrediction.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Predictions\\Commands\\AddPrediction.cs",
               "RelativeToolTip": "Features\\Predictions\\Commands\\AddPrediction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -205,9 +210,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "PredictionModule.cs",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Predictions\\PredictionModule.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Predictions\\PredictionModule.cs",
               "RelativeDocumentMoniker": "Features\\Predictions\\PredictionModule.cs",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Predictions\\PredictionModule.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Predictions\\PredictionModule.cs",
               "RelativeToolTip": "Features\\Predictions\\PredictionModule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -217,9 +222,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "UserModule.cs",
-              "DocumentMoniker": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Users\\UserModule.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Users\\UserModule.cs",
               "RelativeDocumentMoniker": "Features\\Users\\UserModule.cs",
-              "ToolTip": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\api\\TestAPI\\Features\\Users\\UserModule.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Users\\UserModule.cs",
               "RelativeToolTip": "Features\\Users\\UserModule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

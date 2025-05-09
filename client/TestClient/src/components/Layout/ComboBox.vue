@@ -96,7 +96,7 @@ const ComboboxItemIndicatorStyles = tw`inline-flex items-center justify-center`;
         "
             >
                 <div>
-                    <ChevronUpDownIcon class="my-1 size-5" />
+                    <ChevronUpDownIcon class="my-1 size-8" />
                 </div>
             </ComboboxTrigger>
         </ComboboxAnchor>

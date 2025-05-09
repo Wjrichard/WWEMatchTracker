@@ -5,7 +5,7 @@ import SideBar from "@/components/SideBar.vue";
 
 <template>
     <div id="app" class="h-full flex w-full">
-        <aside class="w-64">
+        <aside class="w-96">
             <SideBar />
         </aside>
         <main>
