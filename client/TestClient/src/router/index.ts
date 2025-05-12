@@ -14,7 +14,7 @@ const router = createRouter({
 			component: () => import('@/views/EventListView.vue'),
 		},
 		{
-			path: '/matches/{eventId}',
+			path: '/matches/:eventId',
 			name: 'matches',
 			component: () => import('@/views/MatchListView.vue'),
 		},
@@ -22,6 +22,16 @@ const router = createRouter({
 			path: '/match/prediction',
 			name: 'prediction',
 			component: () => import('@/views/PredictionView.vue'),
+		},
+		{
+			path: '/events/:eventId/details',
+			name: 'eventDetails',
+			component: () => import('@/views/EventDetailsView.vue'),
+		},
+		{
+			path: '/match/:matchId/details',
+			name: 'matchDetails',
+			component: () => import('@/views/MatchDetailsView.vue'),
 		},
 	],
 })

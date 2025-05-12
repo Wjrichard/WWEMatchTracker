@@ -37,42 +37,49 @@ async function applyNewUser(){
     await userStore.setUser(strNewEmail.value,strNewUsername.value)
     await userStore.loadUsers()
     showCreateUserModal.value = false
-    $router.push({ name: 'events' });
+    await $router.push({ name: 'events' });
 }
 
 </script>
 
 <template>
-    <div class="flex min-h-full flex-1 items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
+    <div class="h-screen">
+      <div class="h-1/3 flex justify-center items-center text-6xl leading-tight font-extrabold">
+        WWE Predictions
+      </div>
+      
+      <div class="flex h-1/3 items-center justify-center">
         <div class="w-full max-w-sm space-y-10">
-            <div>
-                <h2 class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">Sign in</h2>
+          <div>
+            <h2 class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">Sign in</h2>
+          </div>
+          <div>
+            <div class="pt-2">
+              <input v-model="strEmail"
+                     @keydown.enter="setUser()"
+                     class="block w-full rounded-t-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:relative focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" placeholder="Email address" />
             </div>
-                <div>
-                    <div class="pt-2">
-                        <input v-model="strEmail"
-                               @keydown.enter="setUser()"
-                               class="block w-full rounded-t-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:relative focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" placeholder="Email address" />
-                    </div>
-                </div>
+          </div>
 
-                <div class="pt-3">
-                    
-                      <button @click="setUser()"
-                              class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 
+          <div class="pt-3">
+
+            <button @click="setUser()"
+                    class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 
                                       font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 
                                       focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                      >
-                            Sign in
-                      </button>
-                </div>
-                <div>
-                    Current User: {{userStore.selectedUser}}
-                    <br/>
-                    All Users: {{userStore._Users}}
-                </div>
+            >
+              Sign in
+            </button>
+          </div>
+          <div>
+            Current User: {{userStore.selectedUser}}
+            <br/>
+            All Users: {{userStore._Users}}
+          </div>
         </div>
-    </div>
+      </div>
+      </div>
+        
 
 
     <ModalBase :open="showCreateUserModal"

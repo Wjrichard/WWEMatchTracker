@@ -2,12 +2,12 @@
 using TestAPI.Repositories;
 using TestAPI.Models;
 
-namespace TestAPI.Features.Users.Queries;
+namespace TestAPI.Features.Matches.Queries;
 
 public class GetMatches
 {
-    public record Query : IRequest<List<Models.Match>>;
-    public class Handler : IRequestHandler<Query, List<Models.Match>>
+    public record Query(int EventId) : IRequest<EventDetails>;
+    public class Handler : IRequestHandler<Query, EventDetails>
     {
         private readonly MatchRepository _matchRepository;
 
@@ -16,9 +16,9 @@ public class GetMatches
             _matchRepository = matchRepository;
         }
 
-        public async Task<List<Models.Match>> Handle(Query request, CancellationToken cancellationToken)
+        public async Task<EventDetails> Handle(Query request, CancellationToken cancellationToken)
         {
-            return await _matchRepository.GetMatches();
+            return await _matchRepository.GetMatches(request.EventId);
         }
     }
 }

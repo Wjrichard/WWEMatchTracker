@@ -37,7 +37,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[TestAPI.Models.Event, TestAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[TestAPI.Models.EventDetails, TestAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -51,7 +51,7 @@
   },
   {
     "ContainingType": "TestAPI.Features.Match.MatchModule\u002B\u003C\u003Ec",
-    "Method": "\u003CMapMatchRoutes\u003Eb__0_1",
+    "Method": "\u003CMapMatchRoutes\u003Eb__0_2",
     "RelativePath": "Match/AddMatch",
     "HttpMethod": "POST",
     "IsController": false,
@@ -84,10 +84,16 @@
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "eventId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[TestAPI.Models.Match, TestAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[TestAPI.Models.EventDetails, TestAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -98,6 +104,34 @@
       "Match"
     ],
     "EndpointName": "GetMatches"
+  },
+  {
+    "ContainingType": "TestAPI.Features.Match.MatchModule\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMatchRoutes\u003Eb__0_1",
+    "RelativePath": "Match/GetMatchParticipants",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "matchId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TestAPI.Models.Team, TestAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Match"
+    ],
+    "EndpointName": "GetMatchParticipants"
   },
   {
     "ContainingType": "TestAPI.Modules.PredictionModule\u002B\u003C\u003Ec",

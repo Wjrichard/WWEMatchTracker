@@ -10,6 +10,4 @@ namespace TestAPI.Models
         public string EventImage { get; set; }
         public string EventDate { get; set; }
     }
-
-
-    }
+}

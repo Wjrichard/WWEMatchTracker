@@ -1,8 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using TestAPI.Features.Matches.Commands;
-using TestAPI.Features.Users.Commands;
-using TestAPI.Features.Users.Queries;
+using TestAPI.Features.Matches.Queries;
 using TestAPI.Models;
 
 namespace TestAPI.Features.Match;
@@ -14,9 +13,14 @@ public static class MatchModule
         var group = app.MapGroup("Match").WithTags("Match");
 
         group.MapGet("/GetMatches",
-                async (IMediator mediator) => await mediator.Send(new GetMatches.Query()))
+                async (IMediator mediator,int eventId) => await mediator.Send(new GetMatches.Query(eventId)))
             .WithName(nameof(GetMatches))
-            .Produces<List<Models.Match>>();
+            .Produces<List<EventDetails>>();
+
+        group.MapGet("/GetMatchParticipants",
+                async (IMediator mediator,int matchId) => await mediator.Send(new GetMatchParticipants.Query(matchId)))
+            .WithName(nameof(GetMatchParticipants))
+            .Produces<List<Team>>();
 
         group.MapPost("/AddMatch",
                 async ([FromBody] Models.Match match, IMediator mediator) => await mediator.Send(new AddMatch.Command(match)))

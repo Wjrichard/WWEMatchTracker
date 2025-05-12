@@ -1,27 +1,17 @@
 <script setup lang="ts">
-import {RouterLink,RouterView} from "vue-router";
+import {RouterView} from "vue-router";
 import SideBar from "@/components/SideBar.vue";
 </script>
 
 <template>
     <div id="app" class="h-full flex w-full">
-        <aside class="w-96">
+        <aside class="w-1/5">
             <SideBar />
         </aside>
-        <main>
+        <div class="w-4/5">
             <router-view />
-        </main>
+        </div>
     </div>
 </template>
 
-<style>
-    #app {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-</style>
 

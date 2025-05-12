@@ -15,7 +15,7 @@ public static class EventModule
         group.MapGet("/GetEvents",
                 async (IMediator mediator) => await mediator.Send(new GetEvents.Query()))
             .WithName(nameof(GetEvents))
-            .Produces<List<Event>>();
+            .Produces<List<EventDetails>>();
 
         group.MapPost("/AddEvent",
                 async ([FromBody] Event e, IMediator mediator) => await mediator.Send(new AddEvent.Command(e)))

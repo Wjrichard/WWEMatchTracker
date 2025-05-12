@@ -1,58 +1,58 @@
-﻿using System.Data.SQLite;
+﻿using Microsoft.Extensions.Logging;
+using System.Data.SQLite;
 using TestAPI.Models;
 
 namespace TestAPI.Repositories
 {
     public class EventRepository
     {
-        public async Task<List<Event>> GetEvents()
+        public async Task<List<EventDetails>> GetEvents()
         {
             string connectionString = "Data Source=Event-Tracker.sqlite;";
-            List<Event> events = new List<Event>();
+            List<EventDetails> events = new List<EventDetails>();
 
 
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
 
-                string checkTableQuery = "SELECT name FROM sqlite_master WHERE type='table' AND name='Events';";
-                using (SQLiteCommand checkCommand = new SQLiteCommand(checkTableQuery, connection))
+                string query = $"select e.*,IFNULL(M.MatchId, 0) as MatchId,IFNULL(M.MatchName, '') as MatchName from Events e left join main.EventMatches EM on e.EventId = EM.EventId left join main.Match M on EM.MatchId = M.MatchId Order by e.EventId, m.MatchId;";
+                using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
-                    var result = checkCommand.ExecuteScalar();
-                    if (result == null)
+                    using (SQLiteDataReader reader = command.ExecuteReader())
                     {
-                        string createTableQuery = "CREATE TABLE Events (EventId INTEGER PRIMARY KEY,EventName TEXT NOT NULL,EventImage TEXT, EventDate TEXT NOT NULL);";
-
-                        using (SQLiteCommand createCommand = new SQLiteCommand(createTableQuery, connection))
+                        var matches = new List<Match>();
+                        Event e = new Event();
+                        int curEventId = 0;
+                        while (reader.Read())
                         {
-                            createCommand.ExecuteNonQuery();
-                        }
-
-                        string insertQuery = "INSERT INTO Events VALUES (NULL,'EventName', 'EventImage', strftime('%Y-%m-%d %H:%M:%S', datetime('now')));";
-
-                        using (SQLiteCommand insertCommand = new SQLiteCommand(insertQuery, connection))
-                        {
-                            insertCommand.ExecuteNonQuery();
-                        }
-                    }
-                    string query = "SELECT * FROM Events";
-                    using (SQLiteCommand command = new SQLiteCommand(query, connection))
-                    {
-                        using (SQLiteDataReader reader = command.ExecuteReader())
-                        {
-                            while (reader.Read())
+                            if (curEventId != Convert.ToInt32(reader["EventId"]))
                             {
-                                Event e = new Event
+                                curEventId = Convert.ToInt32(reader["EventId"]);
+                                if (e.EventId > 0)
                                 {
-                                    EventId = Convert.ToInt32(reader["EventId"].ToString()),
-                                    EventName = reader["EventName"].ToString(),
-                                    EventImage = reader["EventImage"].ToString(),
-                                    EventDate = reader["EventDate"].ToString()
-                                };
-                                events.Add(e);
+                                    events.Add(new EventDetails() { Event = e, Matches = matches });
+                                }
+                                e = new Event();
+                                matches = new List<Match>();
+                                e.EventId = Convert.ToInt32(reader["EventId"]);
+                                e.EventName = reader["EventName"].ToString();
+                                e.EventDate = reader["EventDate"].ToString();
+                                e.EventImage = reader["EventImage"].ToString();
                             }
-                            return events;
+
+                            var matchId = Convert.ToInt32(reader["MatchId"] ?? 0);
+                            var matchName = reader["MatchName"].ToString();
+                            if (matchId > 0)
+                                matches.Add(new Match()
+                                {
+                                    MatchId = matchId,
+                                    MatchName = matchName
+                                });
+
                         }
+                        events.Add(new EventDetails() { Event = e, Matches = matches });
+                        return events;
                     }
                 }
             }
