@@ -27,7 +27,7 @@ export async function createEvent(event:Event){
 
 export async function loadEvents() {
     try {
-        const response = await axios.get('https://localhost:44328/Events/GetEvents');
+        const response = await axios.get('https://localhost:44328/Events/GetEventDetails');
         _EventDetails.value = response.data
         console.log(_EventDetails.value)
     } catch (error) {
@@ -36,10 +36,10 @@ export async function loadEvents() {
 }
 
 
-export async function setEvent(eventId:number) {
-    const curUser = _EventDetails.value.find(detail => detail.event.eventId === eventId)
-    if (curUser){
-        selectedEvent.value = curUser
+export function setEvent(eventId:number) {
+    const curEvent = _EventDetails.value.find(detail => detail.event.eventId === eventId)
+    if (curEvent){
+        selectedEvent.value = curEvent
     }
 }
 

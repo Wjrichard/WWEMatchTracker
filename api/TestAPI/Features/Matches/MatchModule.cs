@@ -12,9 +12,9 @@ public static class MatchModule
     {
         var group = app.MapGroup("Match").WithTags("Match");
 
-        group.MapGet("/GetMatches",
-                async (IMediator mediator,int eventId) => await mediator.Send(new GetMatches.Query(eventId)))
-            .WithName(nameof(GetMatches))
+        group.MapGet("/GetMatchDetailsForEvent/{eventId}",
+                async (IMediator mediator,int eventId) => await mediator.Send(new GetMatchDetailsForEvent.Query(eventId)))
+            .WithName(nameof(GetMatchDetailsForEvent))
             .Produces<List<EventDetails>>();
 
         group.MapGet("/GetMatchParticipants",

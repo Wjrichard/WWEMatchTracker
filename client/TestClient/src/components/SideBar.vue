@@ -41,14 +41,14 @@ import { RouterLink, type RouterLinkProps, type RouteRecordRaw } from 'vue-route
                             Event List
                         </li>
                     </RouterLink>
-                    <RouterLink
+<!--                    <RouterLink
                         to="/predictions"
                         class="flex items-center justify-between text-2xl"
                     >
                     <li class="py-3">
                         Prediction List
                     </li>
-                    </RouterLink>
+                    </RouterLink>-->
                 </ul>
             </nav>
         </div>

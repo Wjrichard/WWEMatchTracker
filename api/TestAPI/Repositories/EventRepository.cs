@@ -6,10 +6,10 @@ namespace TestAPI.Repositories
 {
     public class EventRepository
     {
-        public async Task<List<EventDetails>> GetEvents()
+        public async Task<List<EventDetails>> GetEventDetails()
         {
             string connectionString = "Data Source=Event-Tracker.sqlite;";
-            List<EventDetails> events = new List<EventDetails>();
+            List<EventDetails> details = new List<EventDetails>();
 
 
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
@@ -31,7 +31,7 @@ namespace TestAPI.Repositories
                                 curEventId = Convert.ToInt32(reader["EventId"]);
                                 if (e.EventId > 0)
                                 {
-                                    events.Add(new EventDetails() { Event = e, Matches = matches });
+                                    details.Add(new EventDetails() { Event = e, Matches = matches });
                                 }
                                 e = new Event();
                                 matches = new List<Match>();
@@ -51,8 +51,8 @@ namespace TestAPI.Repositories
                                 });
 
                         }
-                        events.Add(new EventDetails() { Event = e, Matches = matches });
-                        return events;
+                        details.Add(new EventDetails() { Event = e, Matches = matches });
+                        return details;
                     }
                 }
             }

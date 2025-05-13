@@ -1,6 +1,5 @@
 import './assets/main.css'
 import {loadUsers} from "@/stores/user.ts";
-import {loadMatches, loadMatchParticipants} from "@/stores/matches.ts";
 import {loadEvents} from "@/stores/events.ts"
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -11,9 +10,8 @@ app.use(router)
 
 await Promise.all([
     await loadUsers(),
-    //await loadMatches(),
+    //await loadMatchDetails(),
     await loadEvents(),
-    //await loadMatchParticipants(1)
 ])
 
 

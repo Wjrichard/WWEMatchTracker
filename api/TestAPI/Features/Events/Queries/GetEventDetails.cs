@@ -4,7 +4,7 @@ using TestAPI.Models;
 
 namespace TestAPI.Features.Events.Queries;
 
-public class GetEvents
+public class GetEventDetails
 {
     public record Query : IRequest<List<EventDetails>>;
     public class Handler : IRequestHandler<Query, List<EventDetails>>
@@ -18,7 +18,7 @@ public class GetEvents
 
         public async Task<List<EventDetails>> Handle(Query request, CancellationToken cancellationToken)
         {
-            return await _eventRepository.GetEvents();
+            return await _eventRepository.GetEventDetails();
         }
     }
 }

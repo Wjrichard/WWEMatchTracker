@@ -1,5 +1,5 @@
 ﻿<script setup lang="ts">
-import {_EventDetails} from "@/stores/events.ts";
+import eventStore,{_EventDetails} from "@/stores/events.ts";
 import type {EventDetails} from "@/types/eventDetails.ts";
 import ComboBox from "@/components/Layout/ComboBox.vue";
 import {ref} from 'vue'
@@ -9,8 +9,9 @@ const $router = useRouter();
 const selectedEvent = ref<EventDetails>()
 const route = useRoute();
 
-async function openEventDetails(matchId: number) {
-  await $router.push({ name: 'matchDetails', params: { matchId: route.params.matchId } });
+async function openEventDetails(eventId: number) {
+    eventStore.setEvent(eventId)
+    await $router.push({ name: 'matches', params: { eventId: eventId } });
 }
 
 </script>

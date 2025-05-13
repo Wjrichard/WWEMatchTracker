@@ -3,7 +3,7 @@ import matchesStore from '@/stores/matches'
 import {onMounted} from "vue";
 
 onMounted(async () => {
-  await matchesStore.loadMatchParticipants(1)
+ 
 })
 </script>
 

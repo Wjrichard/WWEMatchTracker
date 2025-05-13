@@ -1,14 +1,15 @@
-﻿using System.Data.SQLite;
+﻿using Microsoft.Extensions.Logging;
+using System.Data.SQLite;
 using TestAPI.Models;
 
 namespace TestAPI.Repositories
 {
     public class MatchRepository
     {
-        public async Task<EventDetails> GetMatches(int eventId)
+        public async Task<List<MatchDetails>> GetMatchDetails(int eventId)
         {
             string connectionString = "Data Source=Event-Tracker.sqlite;";
-            List<EventDetails> details = new List<EventDetails>();
+            List<MatchDetails> details = new List<MatchDetails>();
 
 
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
@@ -16,24 +17,39 @@ namespace TestAPI.Repositories
                 string query = $"select M.*, ifnull(T.TeamId,0) AS TeamId,ifnull(T.TeamName,'') as TeamName from Match M LEFT JOIN MatchTeams MT on MT.MatchId = M.MatchId LEFT JOIN main.Team T on MT.TeamId = T.TeamId LEFT JOIN EventMatches EV on M.MatchId = EV.MatchId WHERE EV.EventId = {eventId};";
                 using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
-                connection.Open();
-                using (SQLiteDataReader reader = command.ExecuteReader())
+                    connection.Open();
+                    using (SQLiteDataReader reader = command.ExecuteReader())
                     {
-                        var matches = new List<Match>();
-                        Event e = new Event();
+                        var teams = new List<Team>();
+                        Match m = new Match();
+                        int curMatchId = 0;
                         while (reader.Read())
                         {
-                            matches.Add(new Match()
+                            if (curMatchId != Convert.ToInt32(reader["MatchId"]))
                             {
-                                MatchId = Convert.ToInt32(reader["MatchId"]),
-                                MatchName = reader["MatchName"].ToString()
-                            });
-                            e.EventId = Convert.ToInt32(reader["EventId"]);
-                            e.EventName = reader["EventName"].ToString();
-                            e.EventDate = reader["EventDate"].ToString();
-                            e.EventImage = reader["EventImage"].ToString();
+                                curMatchId = Convert.ToInt32(reader["MatchId"]);
+                                if (m.MatchId > 0)
+                                {
+                                    details.Add(new MatchDetails() { Match = m, Teams = teams });
+                                }
+                                m = new Match();
+                                teams = new List<Team>();
+                                m.MatchId = Convert.ToInt32(reader["MatchId"]);
+                                m.MatchName = reader["MatchName"].ToString();
+                            }
+
+                            var teamId = Convert.ToInt32(reader["TeamId"] ?? 0);
+                            var teamName = reader["TeamName"].ToString();
+                            if (teamId > 0)
+                                teams.Add(new Team()
+                                {
+                                    TeamId = teamId,
+                                    TeamName = teamName
+                                });
+
                         }
-                        return new EventDetails() { Event = e, Matches = matches};
+                        details.Add(new MatchDetails() { Match = m, Teams = teams });
+                        return details;
                     }
                 }
             }

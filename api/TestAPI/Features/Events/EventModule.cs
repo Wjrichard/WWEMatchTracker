@@ -12,9 +12,9 @@ public static class EventModule
     {
         var group = app.MapGroup("Events").WithTags("Events");
 
-        group.MapGet("/GetEvents",
-                async (IMediator mediator) => await mediator.Send(new GetEvents.Query()))
-            .WithName(nameof(GetEvents))
+        group.MapGet("/GetEventDetails",
+                async (IMediator mediator) => await mediator.Send(new GetEventDetails.Query()))
+            .WithName(nameof(GetEventDetails))
             .Produces<List<EventDetails>>();
 
         group.MapPost("/AddEvent",

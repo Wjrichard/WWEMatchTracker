@@ -30,7 +30,7 @@
   {
     "ContainingType": "TestAPI.Modules.EventModule\u002B\u003C\u003Ec",
     "Method": "\u003CMapEventRoutes\u003Eb__0_0",
-    "RelativePath": "Events/GetEvents",
+    "RelativePath": "Events/GetEventDetails",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -47,7 +47,7 @@
     "Tags": [
       "Events"
     ],
-    "EndpointName": "GetEvents"
+    "EndpointName": "GetEventDetails"
   },
   {
     "ContainingType": "TestAPI.Features.Match.MatchModule\u002B\u003C\u003Ec",
@@ -80,7 +80,7 @@
   {
     "ContainingType": "TestAPI.Features.Match.MatchModule\u002B\u003C\u003Ec",
     "Method": "\u003CMapMatchRoutes\u003Eb__0_0",
-    "RelativePath": "Match/GetMatches",
+    "RelativePath": "Match/GetMatchDetailsForEvent/{eventId}",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -103,7 +103,7 @@
     "Tags": [
       "Match"
     ],
-    "EndpointName": "GetMatches"
+    "EndpointName": "GetMatchDetailsForEvent"
   },
   {
     "ContainingType": "TestAPI.Features.Match.MatchModule\u002B\u003C\u003Ec",
