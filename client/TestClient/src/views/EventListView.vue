@@ -17,11 +17,11 @@ async function openEventDetails(eventId: number) {
 </script>
 
 <template>
-    <div class="overflow-auto pt-12 w-full justify-center bg-white truncate">
+    <div class="sticky top-0 z-10 bg-white">
+        <h1 class="w-full text-center flex items-center justify-center py-12 text-8xl font-bold">
+            Events
+        </h1>
         <div class="sticky top-0 z-20">
-            <span class="text-8xl flex w-full justify-center pb-10 sticky top-0">
-                Events
-            </span>
             <div class="w-full h-24 flex items-center sticky top-0 sticky-top z-10 border-b border-gray-200">
               <span class="w-full z-40 flex h-full pt-4 items-center justify-center">
                   <ComboBox
@@ -38,6 +38,8 @@ async function openEventDetails(eventId: number) {
               </span>
             </div>
         </div>
+    </div>
+    <div class="overflow-auto pt-12 w-full justify-center bg-white truncate">
         
         <ul role="list" class="divide-y divide-gray-200 h-full">
             <li v-for="detail in _EventDetails" :key="detail.event.eventId" class="px-6 py-4 hover:bg-gray-50 cursor-pointer"

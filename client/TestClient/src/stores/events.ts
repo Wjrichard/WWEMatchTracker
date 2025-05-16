@@ -43,5 +43,5 @@ export function setEvent(eventId:number) {
     }
 }
 
-const eventStore = { _EventDetails, selectedEvent, loadEvents, initializedEvent, setEvent };
+const eventStore = { _EventDetails, selectedEvent, loadEvents, initializedEvent, setEvent, createEvent };
 export default eventStore;

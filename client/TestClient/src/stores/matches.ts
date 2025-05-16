@@ -41,5 +41,5 @@ export function setMatch(matchId:number) {
     }
 }
 
-const matchesStore = { _Matches, selectedMatch, loadMatchDetails, initializedMatch, setMatch, _CurrentMatchTeams };
+const matchesStore = { _Matches, selectedMatch, loadMatchDetails, initializedMatch, setMatch, _CurrentMatchTeams, createMatch };
 export default matchesStore;
