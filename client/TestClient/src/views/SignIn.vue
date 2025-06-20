@@ -1,10 +1,9 @@
 ﻿<script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import userStore, {_Users} from '@/stores/user.ts';
-import ModalBase from "@/components/Layout/ModalBase.vue";
-import Button from "@/components/Layout/ButtonComponent.vue"
-import router from '@/router';
-import {UserCircleIcon} from "@heroicons/vue/24/solid";
+import Dialog from "@/components/Dialogs/Dialog.vue";
+import Button from "@/components/General/Button.vue"
+import TextInput from "@/components/Forms/TextInput.vue"
 import {useRouter} from "vue-router";
 
 const showCreateUserModal = ref(false)
@@ -43,7 +42,7 @@ async function applyNewUser(){
 </script>
 
 <template>
-    <div class="h-screen">
+    <div class="h-full">
       <div class="h-1/3 flex justify-center items-center text-6xl leading-tight font-extrabold">
         WWE Predictions
       </div>
@@ -51,79 +50,56 @@ async function applyNewUser(){
       <div class="flex h-1/3 items-center justify-center">
         <div class="w-full max-w-sm space-y-10">
           <div>
-            <h2 class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">Sign in</h2>
-          </div>
-          <div>
             <div class="pt-2">
-              <input v-model="strEmail"
-                     @keydown.enter="setUser()"
-                     class="block w-full rounded-t-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:relative focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" placeholder="Email address" />
+                <TextInput 
+                    v-model="strEmail"
+                    @keydown.enter="setUser()"
+                    placeholder="Email Address"
+                />
             </div>
+              
           </div>
 
           <div class="pt-3">
+            <div class="relative flex justify-center">
+              <Dialog header="Sign Up" 
+                      size="lg" 
+                      :isSaveCancel="true" 
+                      close-button-text="Sign Up"
+                      saveRouteName="events">
+                  <template #trigger>
+                      <Button label="Sign In" 
+                              variant="solid" 
+                              color="secondary" 
+                              full-width 
+                              @click="setUser()"
+                              :to="userStore.selectedUser.value?.userId > 0 ? { name: 'events' } : undefined"
+                      />
+                  </template>
 
-            <button @click="setUser()"
-                    class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 
-                                      font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 
-                                      focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Sign in
-            </button>
-          </div>
-          <div>
-            Current User: {{userStore.selectedUser}}
-            <br/>
-            All Users: {{userStore._Users}}
+                  <template #body>
+                      <div class="flex w-full gap-4">
+                          <TextInput
+                              label="Email"
+                              v-model="strNewEmail"
+                              autocomplete="off"
+                              placeholder="Enter your email"
+                              class="w-1/2"
+                          />
+                          <TextInput
+                              label="Username"
+                              v-model="strNewUsername"
+                              autocomplete="off"
+                              placeholder="Enter a username"
+                              class="w-1/2"
+                          />
+                      </div>
+                      
+                  </template>
+              </Dialog>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-        
-
-
-    <ModalBase :open="showCreateUserModal"
-               size="small"
-               @close="showCreateUserModal = false">
-        <template #icon>
-            <UserCircleIcon class="h-8 w-8 text-yellow-600" aria-hidden="true" />
-        </template>
-        <template #header> 
-            <span class="pl-3 text-xl font-bold">
-                Create New User 
-            </span>
-        </template>
-        <template #body>
-            <div class="py-6 flex w-full gap-4">
-                <span class="w-1/2">
-                    <input v-model="strNewEmail"
-                           class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:relative focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" 
-                           placeholder="Email address" />
-                </span>
-                <span class="w-1/2">
-                    <input v-model="strNewUsername"
-                           class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:relative focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" 
-                           placeholder="Username" />
-                </span>
-                
-            </div>
-        </template>
-        <template #footer>
-            <Button size="large"
-                    class="px-16 hover:bg-gray-100"
-                    :disabled="strNewEmail === '' || strNewUsername === '' || !validEmail(strNewEmail)"
-                    :title="strNewEmail === '' && 'Enter an email' 
-                            || strNewUsername === '' && 'Enter a username'
-                            || !validEmail(strNewEmail) && 'Invalid email format'
-                            || ''"
-                    @click="applyNewUser()">
-                Confirm
-            </Button>
-            <Button size="large"
-                    class="px-16 hover:bg-gray-100"
-                    @click="showCreateUserModal = false">
-                Cancel
-            </Button>
-        </template>
-    </ModalBase>
+    </div>
 </template>

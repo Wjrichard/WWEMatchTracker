@@ -10,7 +10,6 @@ app.use(router)
 
 await Promise.all([
     await loadUsers(),
-    await loadEvents(),
 ])
 
 

@@ -1,5 +1,5 @@
 ﻿import type { Event } from '@/types/event.ts'
-import {ref} from 'vue'
+import {ref,watch} from 'vue'
 import axios from "axios";
 import type {EventDetails} from "@/types/eventDetails.ts";
 
@@ -13,8 +13,19 @@ export const initializedEvent = <EventDetails>{
     matches: []
 }
 
-export const _EventDetails = ref<EventDetails[]>([]);
-export const selectedEvent = ref<EventDetails>(initializedEvent);
+// Load from localStorage if present
+const savedEventDetails = localStorage.getItem('eventDetails');
+export const _EventDetails = ref<EventDetails[]>(
+  savedEventDetails ? JSON.parse(savedEventDetails) : []
+);
+const savedSelectedEvent = localStorage.getItem('selectedEvent');
+export const selectedEvent = ref<EventDetails>(
+  savedSelectedEvent ? JSON.parse(savedSelectedEvent) : initializedEvent
+);
+
+watch(selectedEvent, (val) => {
+  localStorage.setItem('selectedEvent', JSON.stringify(val));
+}, { deep: true });
 
 
 export async function createEvent(event:Event){
@@ -29,7 +40,6 @@ export async function loadEvents() {
     try {
         const response = await axios.get('https://localhost:44328/Events/GetEventDetails');
         _EventDetails.value = response.data
-        console.log(_EventDetails.value)
     } catch (error) {
         console.error('Error fetching users:', error);
     }
@@ -40,6 +50,8 @@ export function setEvent(eventId:number) {
     const curEvent = _EventDetails.value.find(detail => detail.event.eventId === eventId)
     if (curEvent){
         selectedEvent.value = curEvent
+        // Persist to localStorage
+        localStorage.setItem('selectedEvent', JSON.stringify(curEvent));
     }
 }
 

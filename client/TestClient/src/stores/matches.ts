@@ -16,7 +16,12 @@ export const _Matches = ref<MatchDetails[]>([]);
 export const _CurrentMatchTeams = computed(() => {
     return selectedMatch.value?.teams
 })
-export const selectedMatch = ref<MatchDetails>(initializedMatch);
+
+// Load from localStorage if present
+const savedSelectedMatch = localStorage.getItem('selectedMatch');
+export const selectedMatch = ref<MatchDetails>(
+  savedSelectedMatch ? JSON.parse(savedSelectedMatch) : initializedMatch
+);
 
 
 export async function createMatch(match:MatchDetails){
@@ -34,10 +39,17 @@ export async function loadMatchDetails(eventId:number) {
     }
 }
 
+import { watch } from 'vue';
+watch(selectedMatch, (val) => {
+  localStorage.setItem('selectedMatch', JSON.stringify(val));
+}, { deep: true });
+
 export function setMatch(matchId:number) {
     const curMatch = _Matches.value?.find(detail => detail.match.matchId === matchId)
     if (curMatch){
         selectedMatch.value = curMatch
+        // Persist to localStorage
+        localStorage.setItem('selectedMatch', JSON.stringify(curMatch));
     }
 }
 

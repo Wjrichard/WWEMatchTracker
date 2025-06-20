@@ -9,7 +9,12 @@ export const initializedUser = {
 }
 
 export const _Users = ref<User[]>([]);
-export const selectedUser = ref<User>(initializedUser);
+
+// Load user from localStorage if present
+const savedUser = localStorage.getItem('selectedUser');
+export const selectedUser = ref<User>(
+  savedUser ? JSON.parse(savedUser) : initializedUser
+);
 
 
 export async function createUser(email:string,username:string){
@@ -33,11 +38,17 @@ export async function setUser(email:string,username?:string) {
     const curUser = _Users.value.find(user => user.email === email)
     if (curUser){
         selectedUser.value = curUser
+        // Persist user to localStorage
+        localStorage.setItem('selectedUser', JSON.stringify(curUser));
         return true
     }
-    if (username && username !== '')
+    if (username && username !== '') {
         await createUser(email,username)
-
+        // Save new user to localStorage
+        const newUser = { ...initializedUser, email, username };
+        selectedUser.value = newUser;
+        localStorage.setItem('selectedUser', JSON.stringify(newUser));
+    }
     return false
 }
 

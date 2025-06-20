@@ -9,7 +9,6 @@ const apiClient = axios.create({
 
 function getAllUsers() {
     const users = apiClient.get('/GetUsers');
-    console.log(users);
     return users;
 }
 
