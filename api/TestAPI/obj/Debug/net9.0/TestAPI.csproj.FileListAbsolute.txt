@@ -356,12 +356,6 @@ C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\scopedc
 C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\staticwebassets\msbuild.TestAPI.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\staticwebassets\msbuild.TestAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\staticwebassets\msbuild.build.TestAPI.props
-C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.TestAPI.props
-C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.TestAPI.props
-C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\TestAPI.csproj.Up2Date
 C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\TestAPI.dll
@@ -369,3 +363,8 @@ C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\refint\
 C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\TestAPI.pdb
 C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\TestAPI.genruntimeconfig.cache
 C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\ref\TestAPI.dll
+C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\wrichard\source\repos\MatchTracker\api\TestAPI\obj\Debug\net9.0\staticwebassets.build.json.cache

@@ -48,7 +48,8 @@ namespace TestAPI.Repositories
                                 });
 
                         }
-                        details.Add(new MatchDetails() { Match = m, Teams = teams });
+                        if (m.MatchId > 0 && teams.Count > 0)
+                            details.Add(new MatchDetails() { Match = m, Teams = teams });
                         return details;
                     }
                 }

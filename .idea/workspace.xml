@@ -5,62 +5,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba0f6137-29cb-4bde-8b62-708189f837b3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/Forms/Combobox.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/General/Accordion.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/General/Blocker.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/General/Button.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/General/Icon.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/General/Tag.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/Interfaces/NavigationMenu.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/Interfaces/Router.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/LayoutHelpers/Divider.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/LayoutHelpers/Item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/LayoutHelpers/PageHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/LayoutHelpers/ResponsiveGrid.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/LayoutHelpers/TestContainer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/Layouts/SidebarLayout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/Layouts/StackedLayout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/Navigation/Dropdown.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/Navigation/ExternalLink.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/Navigation/NavMobileMenu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/components/Navigation/NavigationMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/ProjectEvaluation/testapi.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/ProjectEvaluation/testapi.metadata.v9.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/ProjectEvaluation/testapi.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/ProjectEvaluation/testapi.projects.v9.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/ProjectEvaluation/testapi.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/ProjectEvaluation/testapi.strings.v9.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/4aa7163f-1ea6-4b4c-b5d0-6fbcf1e2d545.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/51e926e6-813a-46d0-ae9a-ccdd1099c1a7.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/824bda33-da88-4988-80fa-7489a8ed259d.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/d838220c-4470-4d30-bf30-73b3a47f6d0a.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/ee9d3695-c1f2-4683-9873-41cf44d33e12.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/config/applicationhost.config" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/config/applicationhost.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/6787586c-bda3-4dd1-8736-c262c7238e9b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/8af7a8d4-1d87-4f2e-ab84-c7f47c5fa056.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/e0b59261-79e0-4dbf-b516-a238509a584b.vsidx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/.futdcache.v2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/DocumentLayout.backup.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/DocumentLayout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Event-Tracker.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Event-Tracker.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Features/Events/EventModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Features/Events/EventModule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Features/Events/Queries/GetEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Features/Events/Queries/GetEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Features/Matches/MatchModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Features/Matches/MatchModule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Features/Matches/Queries/GetMatches.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Features/Matches/Queries/GetMatches.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Models/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Models/Event.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Models/EventMatches.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Models/MatchTeams.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Models/Team.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Models/Team.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Repositories/EventRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Repositories/EventRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/Repositories/MatchRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Repositories/MatchRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/ApiEndpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/ApiEndpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.staticwebassets.endpoints.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/ref/TestAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/ref/TestAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/refint/TestAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/refint/TestAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/staticwebassets/msbuild.build.TestAPI.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.TestAPI.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.TestAPI.props" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/TestAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/TestAPI.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/TestAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/TestAPI.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/TestClient/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/TestClient/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/TestClient/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/assets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/TestClient/src/components/SideBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/components/SideBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/components/Layout/ButtonComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/components/Layout/ComboBox.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/components/Layout/Dialog.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/components/Layout/Dots3xBounce.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/components/Layout/ModalBase.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/components/Styles/DefaultGenerators.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/components/UserAccount.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/components/UserAccount.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/TestClient/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/TestClient/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/router/extensions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/router/extensions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/services/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/services/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/TestClient/src/stores/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/stores/events.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/TestClient/src/stores/matches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/stores/matches.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/stores/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/stores/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/EventListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/EventListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/MatchDetailsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/MatchDetailsView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/MatchListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/MatchListView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/SignIn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/SignIn.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,9 +100,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Wjrichard&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Wjrichard/WWEMatchTracker.git&quot;,
+    &quot;accountId&quot;: &quot;0c3f5f88-d577-45ac-89b1-5b42ed0aeb22&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Matches/Queries/GetMatchDetailsForEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Users/UserModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api/TestAPI/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/TestAPI/Repositories/PredictionRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/TestAPI/Repositories/UserRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.MvcApplicationPartsAssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/client/TestClient/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -91,27 +130,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/wyatt/source/repos/WWEMatchTracker",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "ts.external.directory.path": "C:\\Users\\wyatt\\source\\repos\\WWEMatchTracker\\client\\TestClient\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wyatt/source/repos/WWEMatchTracker&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\wrichard\\source\\repos\\MatchTracker\\client\\TestClient\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -124,6 +163,13 @@
       <workItem from="1746582272965" duration="1416000" />
       <workItem from="1746749528057" duration="7154000" />
       <workItem from="1746912355199" duration="17370000" />
+      <workItem from="1749497682880" duration="1369000" />
+      <workItem from="1749499123500" duration="1289000" />
+      <workItem from="1749667937206" duration="3815000" />
+      <workItem from="1750077644484" duration="780000" />
+      <workItem from="1750082172636" duration="1911000" />
+      <workItem from="1750265522640" duration="4139000" />
+      <workItem from="1750270523453" duration="28581000" />
     </task>
     <servers />
   </component>
@@ -133,5 +179,23 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
