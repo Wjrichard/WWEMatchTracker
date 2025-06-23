@@ -32,6 +32,7 @@ export type TextInputProps = {
 
 const model = defineModel<string>();
 const props = defineProps<TextInputProps>();
+const emit = defineEmits(['input']);
 </script>
 
 <template>
@@ -45,6 +46,7 @@ const props = defineProps<TextInputProps>();
         twMerge(
           'outline-0',
           'rounded-lg px-4 py-2',
+          'w-full', // Make input take full width of parent
           disabled ? 'cursor-not-allowed bg-zinc-50 opacity-75' : '',
           defaultRingColorClasses(),
           defaultActiveRingColorClasses(),
@@ -68,6 +70,8 @@ const props = defineProps<TextInputProps>();
         ),
       ]"
       v-model="model"
+      @input="emit('input', $event)"
+      @focus="emit('focus', $event)"
       :placeholder="placeholder"
       :disabled="disabled"
       :name="name"

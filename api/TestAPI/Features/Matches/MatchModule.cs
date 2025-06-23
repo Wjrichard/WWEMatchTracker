@@ -22,9 +22,9 @@ public static class MatchModule
             .WithName(nameof(GetMatchParticipants))
             .Produces<List<Team>>();
 
-        group.MapPost("/AddMatch",
-                async ([FromBody] Models.Match match, IMediator mediator) => await mediator.Send(new AddMatch.Command(match)))
-            .WithName(nameof(AddMatch))
+        group.MapPost("/SaveMatch",
+                async ([FromBody] Models.Match match, IMediator mediator) => await mediator.Send(new SaveMatch.Command(match)))
+            .WithName(nameof(SaveMatch))
             .Produces<int>();
     }
 }

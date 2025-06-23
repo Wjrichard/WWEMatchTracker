@@ -4,7 +4,7 @@ using TestAPI.Repositories;
 
 namespace TestAPI.Features.Matches.Commands;
 
-public class AddMatch
+public class SaveMatch
 {
     public record Command(TestAPI.Models.Match Match) : IRequest<int>;
 
@@ -17,6 +17,16 @@ public class AddMatch
             _matchRepository = matchRepository;
         }
 
-        public async Task<int> Handle(Command request, CancellationToken cancellationToken) => await _matchRepository.AddMatch(request.Match);
+        public async Task<int> Handle(Command request, CancellationToken cancellationToken)
+        {
+            if (request.Match.MatchId > 0)
+            {
+                return await _matchRepository.UpdateMatch(request.Match);
+            }
+            else
+            {
+                return await _matchRepository.AddMatch(request.Match);
+            }
+        }
     }
 }

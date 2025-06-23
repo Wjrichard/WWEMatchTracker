@@ -83,6 +83,13 @@ const sidebarItems = computed(() => {
       route: { path: "/events" },
     });
   }
+    if (userStore.selectedUser.value && userStore.selectedUser.value.username) {
+        items.push({
+            icon: "icon-list",
+            label: "Teams",
+            route: { path: "/teams" },
+        });
+    }
   const groups = [
     { items },
   ];

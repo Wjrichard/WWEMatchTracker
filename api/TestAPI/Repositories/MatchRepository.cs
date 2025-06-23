@@ -138,5 +138,21 @@ namespace TestAPI.Repositories
                 }
             }
         }
+
+        public async Task<int> UpdateMatch(Match match)
+        {
+            string connectionString = "Data Source=Event-Tracker.sqlite;";
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                string updateQuery = "UPDATE Match SET MatchName = @MatchName WHERE MatchId = @MatchId;";
+                using (SQLiteCommand updateCommand = new SQLiteCommand(updateQuery, connection))
+                {
+                    updateCommand.Parameters.AddWithValue("@MatchName", match.MatchName);
+                    updateCommand.Parameters.AddWithValue("@MatchId", match.MatchId);
+                    return await updateCommand.ExecuteNonQueryAsync();
+                }
+            }
+        }
     }
 }

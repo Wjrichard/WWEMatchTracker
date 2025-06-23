@@ -212,6 +212,56 @@
     "EndpointName": "GetMatchPredictions"
   },
   {
+    "ContainingType": "TestAPI.Features.Teams.TeamModule\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTeamRoutes\u003Eb__0_0",
+    "RelativePath": "Teams/GetTeams",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TestAPI.Models.Team, TestAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Teams"
+    ],
+    "EndpointName": "GetAllTeams"
+  },
+  {
+    "ContainingType": "TestAPI.Features.Teams.TeamModule\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTeamRoutes\u003Eb__0_1",
+    "RelativePath": "Teams/SaveTeam",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "team",
+        "Type": "TestAPI.Models.Team",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Teams"
+    ],
+    "EndpointName": "SaveTeam"
+  },
+  {
     "ContainingType": "TestAPI.Features.Users.UserModule\u002B\u003C\u003Ec",
     "Method": "\u003CMapUserRoutes\u003Eb__0_1",
     "RelativePath": "Users/AddUser",

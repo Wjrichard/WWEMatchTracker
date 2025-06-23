@@ -3,6 +3,7 @@ using Microsoft.OpenApi.Models;
 using System.Reflection;
 using TestAPI.Features.Users;
 using TestAPI.Features.Match;
+using TestAPI.Features.Teams;
 using TestAPI.Modules;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -31,6 +32,8 @@ builder.Services.AddScoped<PredictionRepository>();
 builder.Services.AddScoped(_=> new PredictionRepository());
 builder.Services.AddScoped<EventRepository>();
 builder.Services.AddScoped(_ => new EventRepository());
+builder.Services.AddScoped<TeamRepository>();
+builder.Services.AddScoped(_ => new TeamRepository());
 
 
 builder.Services.AddSwaggerGen(c =>
@@ -78,6 +81,7 @@ app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
     endpoints.MapUserRoutes();
+    endpoints.MapTeamRoutes();      
     endpoints.MapMatchRoutes();
     endpoints.MapPredictionRoutes();
     endpoints.MapEventRoutes();

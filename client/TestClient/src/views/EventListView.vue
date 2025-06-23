@@ -6,6 +6,7 @@ import Button from "@/components/General/Button.vue";
 import {ref, computed, onBeforeMount, watch} from 'vue'
 import {useRouter,useRoute} from "vue-router";
 import { PlusCircleIcon } from "@heroicons/vue/24/solid";
+import TextInput from "@/components/Forms/TextInput.vue";
 
 const $router = useRouter();
 const selectedEvent = ref<EventDetails>()
@@ -32,7 +33,7 @@ const filteredEventOptions = computed(() => {
 
 const filteredEventDetails = computed(() => {
   if (selectedEvent.value) {
-    return _EventDetails.value.filter(detail => detail.event.eventId === selectedEvent.value.eventId);
+    return _EventDetails.value.filter(detail => detail.event.eventId === selectedEvent.value?.event.eventId);
   }
   if (!searchTerm.value) return _EventDetails.value;
   return _EventDetails.value.filter(detail =>
@@ -112,11 +113,11 @@ onBeforeMount(async () => {
       <ul role="list" class="divide-y divide-gray-200 h-full">
         <!-- New Event Row: sticky just below the plus icon if present -->
         <li v-if="newEvents.length > 0" class="z-20 p-4 bg-yellow-50 flex w-full items-center gap-4 shadow-md">
-          <Input v-model="newEvents[0].eventName" 
+          <TextInput v-model="newEvents[0].eventName"
                  placeholder="Event Name" 
                  class="w-1/3 border rounded-lg p-2 border-zinc-500"
           />
-          <Input v-model="newEvents[0].eventDate" 
+          <TextInput v-model="newEvents[0].eventDate"
                  placeholder="Event Date" 
                  class="w-1/3 border rounded-lg p-2 border-zinc-500"
           />
@@ -154,3 +155,4 @@ onBeforeMount(async () => {
     </div>
   </div>
 </template>
+

@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\repositories\\matchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:repositories\\matchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\features\\matches\\queries\\getmatchdetailsforevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\matches\\queries\\getmatchdetailsforevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\features\\teams\\teammodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\teams\\teammodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\features\\teams\\queries\\getallteams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\teams\\queries\\getallteams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\features\\matches\\matchmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\matches\\matchmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\features\\teams\\commands\\saveteams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:features\\teams\\commands\\saveteams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\repositories\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:repositories\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\repositories\\matchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|solutionrelative:repositories\\matchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2CB0DDD-49BB-F94D-B5F0-FF4E97DA6A26}|TestAPI.csproj|c:\\users\\wrichard\\source\\repos\\matchtracker\\api\\testapi\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,11 +42,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T18:56:44.091Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -43,43 +68,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "GetAllTeams.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Teams\\Queries\\GetAllTeams.cs",
+              "RelativeDocumentMoniker": "Features\\Teams\\Queries\\GetAllTeams.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Teams\\Queries\\GetAllTeams.cs",
+              "RelativeToolTip": "Features\\Teams\\Queries\\GetAllTeams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T18:56:06.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TeamModule.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Teams\\TeamModule.cs",
+              "RelativeDocumentMoniker": "Features\\Teams\\TeamModule.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Teams\\TeamModule.cs",
+              "RelativeToolTip": "Features\\Teams\\TeamModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T18:47:40.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MatchModule.cs",
               "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Matches\\MatchModule.cs",
               "RelativeDocumentMoniker": "Features\\Matches\\MatchModule.cs",
               "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Matches\\MatchModule.cs",
               "RelativeToolTip": "Features\\Matches\\MatchModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABpAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T20:05:15.58Z"
+              "WhenOpened": "2025-05-13T20:05:15.58Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetMatchDetailsForEvent.cs",
-              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Matches\\Queries\\GetMatchDetailsForEvent.cs",
-              "RelativeDocumentMoniker": "Features\\Matches\\Queries\\GetMatchDetailsForEvent.cs",
-              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Matches\\Queries\\GetMatchDetailsForEvent.cs",
-              "RelativeToolTip": "Features\\Matches\\Queries\\GetMatchDetailsForEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "SaveTeams.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Teams\\Commands\\SaveTeams.cs",
+              "RelativeDocumentMoniker": "Features\\Teams\\Commands\\SaveTeams.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Features\\Teams\\Commands\\SaveTeams.cs",
+              "RelativeToolTip": "Features\\Teams\\Commands\\SaveTeams.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T20:05:11.143Z"
+              "WhenOpened": "2025-06-23T18:47:20.443Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "TeamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Repositories\\TeamRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TeamRepository.cs",
+              "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Repositories\\TeamRepository.cs",
+              "RelativeToolTip": "Repositories\\TeamRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T17:13:16.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MatchRepository.cs",
               "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Repositories\\MatchRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\MatchRepository.cs",
               "ToolTip": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Repositories\\MatchRepository.cs",
               "RelativeToolTip": "Repositories\\MatchRepository.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAkwDIAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAUwEYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T16:03:44.592Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "EventRepository.cs",
               "DocumentMoniker": "C:\\Users\\wrichard\\source\\repos\\MatchTracker\\api\\TestAPI\\Repositories\\EventRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\EventRepository.cs",
@@ -87,7 +153,8 @@
               "RelativeToolTip": "Repositories\\EventRepository.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T03:47:08.754Z"
+              "WhenOpened": "2025-05-11T03:47:08.754Z",
+              "EditorCaption": ""
             }
           ]
         }

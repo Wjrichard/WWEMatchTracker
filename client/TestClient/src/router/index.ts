@@ -33,6 +33,16 @@ const router = createRouter({
 			name: 'matchDetails',
 			component: () => import('@/views/MatchDetailsView.vue'),
 		},
+		{
+			path: '/teams',
+			name: 'teams',
+			component: () => import('@/views/TeamListView.vue'),
+		},
+		{
+			path: '/teams/:teamId/details',
+			name: 'teamDetails',
+			component: () => import('@/views/TeamDetailsView.vue'),
+		},
 	],
 })
 

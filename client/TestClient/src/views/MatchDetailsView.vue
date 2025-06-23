@@ -12,7 +12,11 @@ const newTeams = ref<Team[]>([])
 const $router = useRouter();
 
 // Track edit state for each team
-const editStates = reactive({});
+const editStates = reactive<Record<number, {
+    originalName: string;
+    editing: boolean;
+    value: string;
+}>>({});
 
 function addNewTeam(){
     const newTeam: Team = {
@@ -42,7 +46,7 @@ function cancelNewTeam(idx: number) {
 }
 
 // Team editing functions
-function startEditTeam(team) {
+function startEditTeam(team: Team) {
     if (!editStates[team.teamId]) {
         editStates[team.teamId] = {
             originalName: team.teamName,
@@ -56,18 +60,20 @@ function startEditTeam(team) {
     }
 }
 
-function onTeamNameInput(team) {
-    if (!editStates[team.teamId]) return;
-    editStates[team.teamId].value = team.teamName;
+function onTeamNameInput(team: Team) {
+    if (editStates[team.teamId]) {
+        editStates[team.teamId].editing = true;
+        editStates[team.teamId].value = team.teamName;
+    }
 }
 
-function saveEditTeam(team) {
+function saveEditTeam(team: Team) {
     // TODO: Implement save logic (API/store update)
     team.teamName = editStates[team.teamId].value;
     editStates[team.teamId].editing = false;
 }
 
-function cancelEditTeam(team) {
+function cancelEditTeam(team: Team) {
     team.teamName = editStates[team.teamId].originalName;
     editStates[team.teamId].editing = false;
 }
@@ -100,23 +106,15 @@ function cancelEditTeam(team) {
                     @focus="startEditTeam(team)"
                     @input="onTeamNameInput(team)"
                 />
-                <input
-                    type="text"
-                    v-model="team.teamName"
-                    class="w-80 min-w-80 max-w-80 text-2xl font-bold text-center border py-4 break-words whitespace-pre-wrap"
-                    style="word-break: break-word;"
-                    @focus="startEditTeam(team)"
-                    @input="onTeamNameInput(team)"
-                />
                 <template v-if="editStates[team.teamId] && editStates[team.teamId].editing && team.teamName !== editStates[team.teamId].originalName">
                     <div class="flex gap-2 ml-2">
                         <button @click.stop="saveEditTeam(team)" class="rounded bg-green-100 hover:bg-green-200 text-green-700 hover:text-green-900 p-2 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
                         </button>
                         <button @click.stop="cancelEditTeam(team)" class="rounded bg-red-100 hover:bg-red-200 text-red-700 hover:text-red-900 p-2 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </button>
@@ -127,12 +125,12 @@ function cancelEditTeam(team) {
                 <input type="text" v-model="team.teamName" class="w-80 min-w-80 max-w-80 text-2xl font-bold text-center border py-4 break-words whitespace-pre-wrap" style="word-break: break-word;" />
                 <div class="flex gap-2 ml-2">
                     <button @click.stop="saveNewTeam(idx)" class="rounded bg-green-100 hover:bg-green-200 text-green-700 hover:text-green-900 p-2 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>
                     </button>
                     <button @click.stop="cancelNewTeam(idx)" class="rounded bg-red-100 hover:bg-red-200 text-red-700 hover:text-red-900 p-2 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
