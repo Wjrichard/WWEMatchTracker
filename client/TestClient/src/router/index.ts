@@ -11,37 +11,22 @@ const router = createRouter({
 		{
 			path: '/events',
 			name: 'events',
-			component: () => import('@/views/EventListView.vue'),
+			component: () => import('@/views/Events/EventListView.vue'),
 		},
 		{
 			path: '/events/:eventId/matches',
 			name: 'matches',
-			component: () => import('@/views/MatchListView.vue'),
-		},
-		/*{
-			path: '/match/prediction',
-			name: 'prediction',
-			component: () => import('@/views/PredictionView.vue'),
-		},*/
-		{
-			path: '/events/:eventId/details',
-			name: 'eventDetails',
-			component: () => import('@/views/EventDetailsView.vue'),
+			component: () => import('@/views/Matches/MatchListView.vue'),
 		},
 		{
 			path: '/match/:matchId/edit',
 			name: 'matchDetails',
-			component: () => import('@/views/MatchDetailsView.vue'),
+			component: () => import('@/views/Matches/MatchDetailsView.vue'),
 		},
 		{
 			path: '/teams',
 			name: 'teams',
-			component: () => import('@/views/TeamListView.vue'),
-		},
-		{
-			path: '/teams/:teamId/details',
-			name: 'teamDetails',
-			component: () => import('@/views/TeamDetailsView.vue'),
+			component: () => import('@/views/Teams/TeamListView.vue'),
 		},
 	],
 })

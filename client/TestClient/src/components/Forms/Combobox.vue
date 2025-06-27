@@ -86,11 +86,11 @@ const ComboboxItemIndicatorStyles = tw`inline-flex items-center justify-center`;
       />
       <ComboboxTrigger
         :class="
-          twMerge(tw`cursor-pointer px-2 text-zinc-500 hover:text-zinc-800`)
+          twMerge(tw`cursor-pointer h-full flex items-center px-2 text-zinc-500 hover:text-zinc-800`)
         "
       >
-        <div>
-          <ChevronsUpDown class="my-1 size-5" />
+        <div class="flex items-center h-full w-full">
+          <ChevronsUpDown class="size-8" />
         </div>
       </ComboboxTrigger>
     </ComboboxAnchor>

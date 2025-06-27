@@ -75,15 +75,6 @@ onBeforeMount(async () => {
 <template>
   <div class="flex flex-col h-full w-full bg-white">
     <div class="sticky top-0 z-10 bg-white">
-      <div class="relative w-full">
-        <Button
-          @click="$router.push('/')"
-          icon="icon-arrow-left"
-          label="Back"
-          color="secondary"
-          class="absolute left-4 top-4"
-        />
-      </div>
       <h1 class="w-full text-center flex items-center justify-center py-6 text-6xl font-bold border-b border-gray-200">
         Events
       </h1>
@@ -105,9 +96,13 @@ onBeforeMount(async () => {
           />
         </span>
       </div>
-      <span class="sticky top-0 z-20 bg-white flex w-full justify-center py-3 shadow-md border-b border-gray-200 cursor-pointer hover:bg-gray-100" @click="addNewEvent">
-        <PlusCircleIcon class="h-12 w-12" />
-      </span>
+        <span @click="addNewEvent"
+              class="sticky top-0 z-20 bg-white flex w-full justify-center py-3 shadow-md border-b border-gray-200 cursor-pointer hover:bg-gray-100">
+                <PlusCircleIcon class="h-12 w-12" />
+                <span class="flex items-center text-2xl font-semibold ml-2">
+                    Add New Event
+                </span>
+            </span>
     </div>
     <div class="overflow-auto w-full flex-1 bg-white truncate">
       <ul role="list" class="divide-y divide-gray-200 h-full">
@@ -115,20 +110,20 @@ onBeforeMount(async () => {
         <li v-if="newEvents.length > 0" class="z-20 p-4 bg-yellow-50 flex w-full items-center gap-4 shadow-md">
           <TextInput v-model="newEvents[0].eventName"
                  placeholder="Event Name" 
-                 class="w-1/3 border rounded-lg p-2 border-zinc-500"
+                 class="w-1/3 p-2 border-zinc-500"
           />
           <TextInput v-model="newEvents[0].eventDate"
                  placeholder="Event Date" 
-                 class="w-1/3 border rounded-lg p-2 border-zinc-500"
+                 class="w-1/3 p-2 border-zinc-500"
           />
           <div class="flex gap-2 ml-auto w-1/3">
             <button @click.stop="saveNewEvent(0)" class="rounded bg-green-100 hover:bg-green-200 text-green-700 hover:text-green-900 p-2 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
             </button>
             <button @click.stop="cancelNewEvent(0)" class="rounded bg-red-100 hover:bg-red-200 text-red-700 hover:text-red-900 p-2 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>

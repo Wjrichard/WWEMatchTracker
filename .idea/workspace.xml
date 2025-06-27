@@ -5,26 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba0f6137-29cb-4bde-8b62-708189f837b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/TestAPI/Features/Teams/Commands/SaveTeams.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/TestAPI/Features/Teams/Queries/GetAllTeams.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/TestAPI/Features/Teams/TeamModule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/TestClient/src/stores/teams.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/TestClient/src/views/TeamDetailsView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/TestClient/src/views/TeamListView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/TestClient/src/resources/WWE Logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/548ab8ad-4b4b-49ad-9fdb-e0d629aecf4d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/CopilotIndices/17.14.734.62261/CodeChunks.db" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/CopilotIndices/17.14.734.62261/CodeChunks.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/CopilotIndices/17.14.734.62261/SemanticSymbols.db" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/CopilotIndices/17.14.734.62261/SemanticSymbols.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/6787586c-bda3-4dd1-8736-c262c7238e9b.vsidx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/8af7a8d4-1d87-4f2e-ab84-c7f47c5fa056.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/a584bace-541c-444c-9d01-686c1b01a6bd.vsidx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/FileContentIndex/e0b59261-79e0-4dbf-b516-a238509a584b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/.futdcache.v2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/DocumentLayout.backup.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/.vs/TestAPI/v17/DocumentLayout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Features/Matches/Commands/AddMatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Features/Matches/Commands/SaveMatch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Features/Matches/MatchModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Features/Matches/MatchModule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/TestAPI/Repositories/MatchRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/Repositories/MatchRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/bin/Debug/net9.0/TestAPI.pdb" afterDir="false" />
@@ -40,14 +31,22 @@
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/refint/TestAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/refint/TestAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/TestClient/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/TestClient/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/TestClient/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/TestClient/src/components/Forms/TextInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/components/Forms/TextInput.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/components/Forms/Combobox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/components/Forms/Combobox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/components/Layouts/SidebarLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/components/Layouts/SidebarLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/components/SideBar.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/TestClient/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/EventListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/EventListView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/MatchDetailsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/MatchDetailsView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/MatchListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/MatchListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/EventDetailsView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/EventListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/Events/EventListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/MatchDetailsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/Matches/MatchDetailsView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/MatchListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/Matches/MatchListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/SignIn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/SignIn.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/TeamDetailsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/Teams/TeamDetailsView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/src/views/TeamListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/src/views/Teams/TeamListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/TestClient/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/TestClient/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,20 +77,20 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Matches/Commands/AddMatch.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Matches/MatchModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Matches/Queries/GetMatchDetailsForEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Matches/Queries/GetMatchParticipants.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Predictions/Commands/AddPrediction.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Teams/Commands/SaveTeams.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Teams/Queries/GetAllTeams.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Teams/TeamModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Teams/Commands/SaveTeams.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Teams/Queries/GetAllTeams.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Teams/TeamModule.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api/TestAPI/Features/Users/UserModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/TestAPI/Models/EventDetails.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api/TestAPI/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/api/TestAPI/Repositories/EventRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/api/TestAPI/Repositories/MatchRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/TestAPI/Repositories/EventRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/TestAPI/Repositories/MatchRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api/TestAPI/Repositories/PredictionRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/api/TestAPI/Repositories/TeamRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/TestAPI/Repositories/TeamRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api/TestAPI/Repositories/UserRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api/TestAPI/obj/Debug/net9.0/TestAPI.MvcApplicationPartsAssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
@@ -145,6 +144,7 @@
       <workItem from="1750082172636" duration="1911000" />
       <workItem from="1750265522640" duration="4139000" />
       <workItem from="1750270523453" duration="51485000" />
+      <workItem from="1750768372428" duration="20541000" />
     </task>
     <servers />
   </component>

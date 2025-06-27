@@ -176,63 +176,63 @@ function cancelNewMatch(idx: number) {
 <template>
     <div class="relative flex flex-col h-full">
         <div class="sticky top-0 z-10 bg-white">
-            <div class="relative w-full">
-                <Button
-                    @click="goBack"
-                    icon="icon-arrow-left"
-                    label="Back"
-                    color="secondary"
-                    class="absolute left-4 top-4"
-                />
-            </div>
-            <div class="w-full text-center flex items-center justify-center py-6 text-6xl font-bold border-b border-gray-200">
-              <div class="flex flex-col w-full items-center">
-                <span v-if="!isEditing">
-                  {{ selectedEvent.event.eventName }}
-                </span>
-                <span v-else>
-                    <TextInput 
-                        v-model="selectedEvent.event.eventName"
-                        placeholder="Event Name"
-                        class="text-4xl"
-                    />
-                </span>
-                <span v-if="!isEditing" class="mt-0.5">
-                  <span class="text-xl font-semibold text-gray-500">{{ selectedEvent.event.eventDate }}</span>
-                </span>
-                <span v-else class="mt-0.5">
-                  <Datepicker
-                    v-model="dateRange"
-                    range
-                    :multi-calendars="false"
-                    :format="'yyyy-MM-dd'"
-                    :placeholder="'Select date range'"
-                    class="text-2xl"
+            <div class="w-full flex items-start justify-between py-6 px-4 border-b border-gray-200">
+                <div class="flex items-start pt-1"> <!-- Added pt-1 for fine-tuning vertical alignment -->
+                  <Button
+                      @click="goBack"
+                      icon="icon-arrow-left"
+                      label="Back"
+                      color="secondary"
                   />
-                </span>
-                  <div>
-                    <span v-if="!isEditing" @click="isEditing = true" class="inline-flex items-center justify-center mt-2 rounded-lg border border-gray-300 bg-gray-100 hover:bg-gray-200 cursor-pointer transition-all duration-150 p-1">
+                </div>
+                <div class="flex flex-col w-full items-center">
+                  <div class="flex items-center gap-4">
+                    <span v-if="!isEditing" class="text-6xl font-bold">
+                      {{ selectedEvent.event.eventName }}
+                    </span>
+                    <span v-else>
+                        <TextInput 
+                            v-model="selectedEvent.event.eventName"
+                            placeholder="Event Name"
+                            class="text-4xl"
+                        />
+                    </span>
+                    <span v-if="!isEditing" @click="isEditing = true" class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-gray-100 hover:bg-gray-200 cursor-pointer transition-all duration-150 p-1">
                       <PencilIcon class="h-8 w-8 align-middle" />
                     </span>
-                    <span v-else class="inline-flex items-center justify-center px-4 text-lg mt-2 pt-2 gap-x-2">
+                  </div>
+                  <div class="flex items-center gap-4 mt-0.5">
+                    <span v-if="!isEditing" class="text-xl font-semibold text-gray-500">{{ selectedEvent.event.eventDate }}</span>
+                    <span v-else>
+                      <Datepicker
+                        v-model="dateRange"
+                        range
+                        :multi-calendars="false"
+                        :format="'yyyy-MM-dd'"
+                        :placeholder="'Select date range'"
+                        class="text-2xl"
+                      />
+                    </span>
+                    <span v-if="isEditing" class="inline-flex items-center justify-center px-4 text-lg pt-2 gap-x-2">
                       <Button @click="updateEvent()" color="secondary" label="Save" />
                       <Button @click="isEditing = false" color="secondary" label="Cancel" />
                     </span>
                   </div>
-              </div>
+                </div>
+                <div class="w-24"></div> <!-- Spacer to balance the layout -->
             </div>
             <span @click="addNewMatch"
                   class="sticky top-0 z-20 bg-white flex w-full justify-center py-3 shadow-md border-b border-gray-200 cursor-pointer hover:bg-gray-100">
                 <PlusCircleIcon class="h-12 w-12" />
                 <span class="flex items-center text-2xl font-semibold ml-2">
-                    Add Match
+                    Add New Match
                 </span>
             </span>
         </div>
         <div class="flex flex-col h-full">
           <div class="flex-1 min-h-0 overflow-y-auto rounded-md bg-white shadow">
             <ul role="list" class="divide-y divide-gray-200">
-                <li v-if="_Matches.length > 1" v-for="detail in _Matches" class="px-6 py-4 hover:cursor-pointer hover:bg-gray-50" @click="openMatchDetails(detail.match.matchId)">
+                <li v-if="_Matches.length > 0 || newMatches.length > 0" v-for="detail in _Matches" class="px-6 py-4 hover:cursor-pointer hover:bg-gray-50" @click="openMatchDetails(detail.match.matchId)">
                     <div class="flex w-full" v-if="detail.match.matchName !== '' && detail.match.matchName">
                         <span class="w-1/3 flex items-center font-bold text-2xl whitespace-pre-wrap">
                             {{detail.match.matchName}}

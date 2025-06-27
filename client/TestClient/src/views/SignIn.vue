@@ -5,6 +5,7 @@ import Dialog from "@/components/Dialogs/Dialog.vue";
 import Button from "@/components/General/Button.vue"
 import TextInput from "@/components/Forms/TextInput.vue"
 import {useRouter} from "vue-router";
+import WWELogo from '@/resources/WWE Logo.png';
 
 const showCreateUserModal = ref(false)
 const strEmail = ref('');
@@ -43,11 +44,12 @@ async function applyNewUser(){
 
 <template>
     <div class="h-full">
-      <div class="h-1/3 flex justify-center items-center text-6xl leading-tight font-extrabold">
+      <div class="h-1/2 flex flex-col justify-center items-center text-6xl leading-tight font-extrabold">
+        <img :src="WWELogo" alt="WWE Logo" class="mb-4 w-64 h-auto" />
         WWE Predictions
       </div>
       
-      <div class="flex h-1/3 items-center justify-center">
+      <div class="flex h-1/6 items-center justify-center">
         <div class="w-full max-w-sm space-y-10">
           <div>
             <div class="pt-2">
@@ -57,7 +59,6 @@ async function applyNewUser(){
                     placeholder="Email Address"
                 />
             </div>
-              
           </div>
 
           <div class="pt-3">
@@ -94,7 +95,6 @@ async function applyNewUser(){
                               class="w-1/2"
                           />
                       </div>
-                      
                   </template>
               </Dialog>
             </div>

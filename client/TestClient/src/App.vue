@@ -69,23 +69,24 @@ const getUpcomingEventLinks = computed(() => {
 });
 
 const sidebarItems = computed(() => {
-  const items = [
-    {
-      icon: "icon-user",
-      label: "Sign In",
-      route: { path: "/" },
-    },
-  ];
+  const items = [];
+  if (!(userStore.selectedUser.value && userStore.selectedUser.value.username)) {
+      items.push({
+          icon: "icon-arrow-left-to-line",
+              label: "Sign In",
+          route: { path: "/" },
+      });
+  }
   if (userStore.selectedUser.value && userStore.selectedUser.value.username) {
     items.push({
-      icon: "icon-list",
+      icon: "icon-calendar",
       label: "Events",
       route: { path: "/events" },
     });
   }
     if (userStore.selectedUser.value && userStore.selectedUser.value.username) {
         items.push({
-            icon: "icon-list",
+            icon: "icon-users",
             label: "Teams",
             route: { path: "/teams" },
         });
@@ -110,7 +111,7 @@ const sidebarItems = computed(() => {
         class="h-screen"
     >
         <template #sidebarHeader>
-                <h1 class="text-2xl font-bold">
+                <h1 class="text-3xl font-bold">
                     WWE Predictions
                 </h1>
         </template>

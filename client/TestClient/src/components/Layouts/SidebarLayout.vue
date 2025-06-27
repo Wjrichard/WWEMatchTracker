@@ -17,7 +17,7 @@ defineProps<SidebarLayoutProps>();
 
 <template>
   <div
-    class="flex h-full w-full flex-col bg-transparent lg:flex-row lg:bg-zinc-100"
+    class="flex h-full w-full flex-col bg-transparent lg:flex-row lg:bg-zinc-100 z-99"
   >
     <div class="w-full lg:w-72">
       <div class="flex h-full flex-col">
